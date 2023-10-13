@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>게시물 등록</title>
+</head>
+<body>
+
+<h1>게시물 등록 페이지</h1>
+<br><hr><br>
+
+<form action="/post/register" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="userId" value="2">
+    <span>게시물 설명</span><br>
+    <hr>
+    <textarea name="caption" rows="4" cols="50" maxlength="100" placeholder="문구를 작성해주세요."></textarea>
+    <br>
+    <span>사진 등록</span><br>
+    <input multiple="multiple" name="uploadImgs" type="file" >
+    <input type="submit" value="등록">
+</form>
+
+</body>
+</html>
